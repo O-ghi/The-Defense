@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 40
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -264,12 +264,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Tower 03 - Level 03 - Projectile - Impact_1: 973256400
+      Tower 03 - Level 03 - Projectile - Impact_0: 412503730
       Tower 03 - Level 03 - Projectile - Impact_2: -656598799
       Tower 03 - Level 03 - Projectile - Impact_3: 1712993109
       Tower 03 - Level 03 - Projectile - Impact_5: 1686521061
       Tower 03 - Level 03 - Projectile - Impact_4: -1560187413
-      Tower 03 - Level 03 - Projectile - Impact_0: 412503730
+      Tower 03 - Level 03 - Projectile - Impact_1: 973256400
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
