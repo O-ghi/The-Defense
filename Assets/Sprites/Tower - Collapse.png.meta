@@ -42,12 +42,20 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
   spriteMode: 2
+=======
+  spriteMode: 1
+>>>>>>> c5bd083 (menu scene)
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 40
+=======
+  spritePixelsToUnits: 100
+>>>>>>> c5bd083 (menu scene)
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -76,6 +84,7 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -400,6 +409,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+=======
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+>>>>>>> c5bd083 (menu scene)
     outline: []
     physicsShape: []
     bones: []
@@ -410,6 +424,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+<<<<<<< HEAD
     nameFileIdTable:
       Tower - Collapse_9: 1056148944
       Tower - Collapse_0: 219866867
@@ -424,6 +439,9 @@ TextureImporter:
       Tower - Collapse_1: 1500549017
       Tower - Collapse_2: -441225037
       Tower - Collapse_10: -510366335
+=======
+    nameFileIdTable: {}
+>>>>>>> c5bd083 (menu scene)
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
