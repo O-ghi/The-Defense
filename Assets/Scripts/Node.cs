@@ -19,7 +19,14 @@ public class Node : MonoBehaviour
     private Color startColor;
 
     BuildManager buildManager;
+    [HideInInspector]
+    public int currentLevel = 0;
 
+    [HideInInspector]
+    public int UpdateCost = 0;
+
+    [HideInInspector]
+    public int currentPrice = 0;
     void Start()
     {
         select = transform.Find("Select").GetComponent<Transform>();
@@ -62,32 +69,58 @@ public class Node : MonoBehaviour
         turret = _turret;
 
         turretBlueprint = blueprint;
-
-
+        currentPrice = turretBlueprint.cost;
+        currentLevel = 1;
+        UpdateCost = turretBlueprint.upgradeCostLevel2;
         Debug.Log("Turret build!");
     }
 
     public void UpgradeTurret()
     {
-        if (PlayerStats.Money < turretBlueprint.upgradeCostLevel2)
+        if (currentLevel == 1)
         {
-            Debug.Log("Not enough money to upgrade that!");
+            if (PlayerStats.Money < turretBlueprint.upgradeCostLevel2)
+            {
+                Debug.Log("Not enough money to upgrade that!");
+                return;
+            }
+
+            PlayerStats.Money -= turretBlueprint.upgradeCostLevel2;
+
+            //Get rid of the old turret
+            Destroy(turret);
+
+            //Build a new one
+            GameObject _turret = (GameObject)Instantiate(turretBlueprint.upgradedPrefabLevel2, GetBuildPosition(), Quaternion.identity);
+            turret = _turret;
+
+            currentLevel = 2;
+            currentPrice = turretBlueprint.upgradeCostLevel2;
+            UpdateCost = turretBlueprint.upgradeCostLevel3;
+            Debug.Log("Turret upgraded!");
             return;
         }
+        if (currentLevel == 2)
+        {
+            if (PlayerStats.Money < turretBlueprint.upgradeCostLevel3)
+            {
+                Debug.Log("Not enough money to upgrade that!");
+                return;
+            }
 
-        PlayerStats.Money -= turretBlueprint.upgradeCostLevel2;
+            PlayerStats.Money -= turretBlueprint.upgradeCostLevel3;
 
-        //Get rid of the old turret
-        Destroy(turret);
+            //Get rid of the old turret
+            Destroy(turret);
 
-        //Build a new one
-        GameObject _turret = (GameObject)Instantiate(turretBlueprint.upgradedPrefabLevel2, GetBuildPosition(), Quaternion.identity);
-        turret = _turret;
-
-
-        isUpgraded = true;
-
-        Debug.Log("Turret upgraded!");
+            //Build a new one
+            GameObject _turret = (GameObject)Instantiate(turretBlueprint.upgradedPrefabLevel3, GetBuildPosition(), Quaternion.identity);
+            turret = _turret;
+            currentPrice = turretBlueprint.upgradeCostLevel3;
+            isUpgraded = true;
+            currentLevel = 2;
+            Debug.Log("Turret upgraded!");
+        }
     }
 
     public void SellTurret()

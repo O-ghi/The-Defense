@@ -354,11 +354,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44c0b765319465446ac098a154b58165, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 5
+  startSpeed: 6
   speed: 0
-  startHealth: 200
-  worth: 20
+  startHealth: 500
+  worth: 30
   healthBar: {fileID: 5167351398068240110}
+  isDead: 0
+  enemyMovement: {fileID: 0}
+  target: {fileID: 0}
 --- !u!95 &3177900200660482227
 Animator:
   serializedVersion: 4

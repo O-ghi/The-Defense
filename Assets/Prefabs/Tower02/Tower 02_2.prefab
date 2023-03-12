@@ -120,6 +120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2310953958884162143}
   - component: {fileID: 8212056113064589350}
+  - component: {fileID: 6492449434327089265}
   m_Layer: 0
   m_Name: Tower 02_2
   m_TagString: Untagged
@@ -200,3 +201,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6492449434327089265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8212056113064589351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 294fec7ed73a0644f917da6242e803c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 20
+  bulletPrefab: {fileID: 4303094501275751310, guid: d44d0c9e9b7d79b4a835d4e0c5ad95e1, type: 3}
+  fireRate: 0.5
+  isThunder: 1
+  damageOverTime: 30
+  slowAmount: 0.5
+  lineRenderer: {fileID: 0}
+  impactEffect: {fileID: 0}
+  impactLight: {fileID: 0}
+  enemyTag: Enemy
+  partToRotate: {fileID: 1460987262490667193}
+  turnSpeed: 10
+  firePoint: {fileID: 0}

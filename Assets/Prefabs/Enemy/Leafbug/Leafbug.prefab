@@ -201,11 +201,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44c0b765319465446ac098a154b58165, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 2
+  startSpeed: 3
   speed: 0
-  startHealth: 500
-  worth: 20
+  startHealth: 600
+  worth: 25
   healthBar: {fileID: 8961773470483739827}
+  isDead: 0
+  enemyMovement: {fileID: 0}
+  target: {fileID: 0}
 --- !u!95 &1725627079607251694
 Animator:
   serializedVersion: 4

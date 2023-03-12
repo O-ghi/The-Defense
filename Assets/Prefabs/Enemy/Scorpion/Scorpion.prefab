@@ -258,6 +258,9 @@ MonoBehaviour:
   startHealth: 1000
   worth: 200
   healthBar: {fileID: 2509470468316241575}
+  isDead: 0
+  enemyMovement: {fileID: 0}
+  target: {fileID: 0}
 --- !u!95 &5296052612387936506
 Animator:
   serializedVersion: 4

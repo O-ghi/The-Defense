@@ -103,10 +103,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 294fec7ed73a0644f917da6242e803c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 15
+  range: 30
   bulletPrefab: {fileID: 7804868071172186146, guid: 5bb967cbe901fb143b72e9c8c182dc35, type: 3}
   fireRate: 1
-  useLaser: 0
+  isThunder: 0
   damageOverTime: 30
   slowAmount: 0.5
   lineRenderer: {fileID: 0}

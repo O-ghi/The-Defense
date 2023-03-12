@@ -7,6 +7,8 @@ public class NodeUI : MonoBehaviour
     public GameObject ui;
 
     public Text upgradeCost;
+    public TMPro.TMP_Text damage;
+    public TMPro.TMP_Text level;
     public Button upgradeButton;
 
     public Text sellAmount;
@@ -21,7 +23,7 @@ public class NodeUI : MonoBehaviour
 
         if (!target.isUpgraded)
         {
-            upgradeCost.text = "$" + target.turretBlueprint.upgradeCostLevel2;
+            upgradeCost.text = target.UpdateCost + "$";
             upgradeButton.interactable = true;
         }
         else
@@ -30,8 +32,10 @@ public class NodeUI : MonoBehaviour
             upgradeButton.interactable = false;
         }
 
-        sellAmount.text = "$" + target.turretBlueprint.GetSellAmount();
-
+        sellAmount.text = target.currentPrice / 2 + "$";
+        Bullet bullet = target.turret.GetComponent<Turret>().bulletPrefab.GetComponent<Bullet>();
+        damage.text = "+" + bullet.damage.ToString();
+        level.text = "Level " + target.currentLevel.ToString();
         ui.SetActive(true);
     }
 

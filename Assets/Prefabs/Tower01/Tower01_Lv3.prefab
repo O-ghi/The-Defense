@@ -46,6 +46,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3077060890200306299}
   - component: {fileID: 5517832763167771694}
+  - component: {fileID: -6863491258909039105}
   m_Layer: 0
   m_Name: Tower01_Lv3
   m_TagString: Untagged
@@ -126,6 +127,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-6863491258909039105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5517832763167771695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 294fec7ed73a0644f917da6242e803c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 30
+  bulletPrefab: {fileID: 7804868071172186146, guid: e70f517931a057040bf8b123877a7c67, type: 3}
+  fireRate: 1
+  isThunder: 0
+  damageOverTime: 30
+  slowAmount: 0.5
+  lineRenderer: {fileID: 0}
+  impactEffect: {fileID: 0}
+  impactLight: {fileID: 0}
+  enemyTag: Enemy
+  partToRotate: {fileID: 762047982146444676}
+  turnSpeed: 10
+  firePoint: {fileID: 4106763490361207984}
 --- !u!1 &5968900415474563319
 GameObject:
   m_ObjectHideFlags: 0

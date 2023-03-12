@@ -19,7 +19,7 @@ public class Enemy : MonoBehaviour
     [Header("Unity Stuff")]
     public Image healthBar;
 
-    private bool isDead = false;
+    public bool isDead = false;
 
     //Animation Event
     private AnimationEvent animationEvent;
@@ -57,7 +57,7 @@ public class Enemy : MonoBehaviour
         isDead = true;
         Debug.Log($"Die");
         PlayerStats.Money += worth;
-
+        GameManager.instance.audioSource.Play();
         Animator animator = GetComponent<Animator>();
         animator.SetTrigger("Die");
         GetComponent<EnemyMovement>().isDie = isDead;

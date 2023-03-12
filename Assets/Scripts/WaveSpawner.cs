@@ -1,6 +1,7 @@
 using UnityEngine;
 using System;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class WaveSpawner : MonoBehaviour
     public float timeBetweenWaves = 5f;
     private float countdown = 2f;
 
-    // public Text waveCountdownText;
+    public Text waveCountdownText;
 
     public GameManager gameManager;
 
@@ -55,7 +56,7 @@ public class WaveSpawner : MonoBehaviour
 
         countdown = Mathf.Clamp(countdown, 0f, Mathf.Infinity);
 
-        // waveCountdownText.text = string.Format("{0:00.00}", countdown);
+        waveCountdownText.text = string.Format("{0:00.00}", countdown);
     }
 
     /// <summary>
@@ -85,11 +86,6 @@ public class WaveSpawner : MonoBehaviour
                     TotalEnemy--;
                 }
             }
-        }
-
-        for (int i = 0; i < EnemiesAlive; i++)
-        {
-            // SpawnEnemy(wave.enemy);
         }
 
     }
