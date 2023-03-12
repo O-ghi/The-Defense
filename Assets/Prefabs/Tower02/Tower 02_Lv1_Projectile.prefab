@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8886720686581687066}
   - component: {fileID: 8886720686581687067}
   - component: {fileID: 8886720686581687069}
+  - component: {fileID: -4129587144667891575}
+  - component: {fileID: -5891599440274172559}
   m_Layer: 0
   m_Name: Tower 02_Lv1_Projectile
   m_TagString: Untagged
@@ -105,3 +107,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-4129587144667891575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8886720686581687064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9ddd6b0c213d34caa57c189c906b1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-5891599440274172559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8886720686581687064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87737c070aaa5f4690ee6db051e7101, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 70
+  damage: 50
+  explosionRadius: 1
+  impactEffect: {fileID: 8886720686581687064, guid: 9929a83a2f35a254897be3a0a5824c6a, type: 3}

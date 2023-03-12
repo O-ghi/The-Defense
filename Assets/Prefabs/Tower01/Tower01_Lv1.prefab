@@ -10,10 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1604940958}
   - component: {fileID: 1604940959}
-<<<<<<< HEAD
   - component: {fileID: 4819927765784536766}
-=======
->>>>>>> c5bd083 (menu scene)
   m_Layer: 0
   m_Name: Tower 01 - Level 01 - Weapon_0
   m_TagString: Untagged
@@ -32,24 +29,15 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-<<<<<<< HEAD
   m_Children:
   - {fileID: 4183546408075131306}
-=======
-  m_Children: []
->>>>>>> c5bd083 (menu scene)
   m_Father: {fileID: 2775181609330878600}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
   m_AnchoredPosition: {x: 0, y: 0.15}
   m_SizeDelta: {x: 0.9756, y: 0.9608}
-=======
-  m_AnchoredPosition: {x: -0.0023, y: 0.1711}
-  m_SizeDelta: {x: 1.2291, y: 1.2414}
->>>>>>> c5bd083 (menu scene)
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1604940959
 SpriteRenderer:
@@ -103,7 +91,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
 --- !u!95 &4819927765784536766
 Animator:
   serializedVersion: 4
@@ -124,8 +111,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
-=======
->>>>>>> c5bd083 (menu scene)
 --- !u!1 &5517832763167771695
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,6 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2775181609330878600}
   - component: {fileID: 5517832763167771694}
+  - component: {fileID: 3727487222366241622}
   m_Layer: 0
   m_Name: Tower01_Lv1
   m_TagString: Untagged
@@ -161,11 +147,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
   m_AnchoredPosition: {x: 0, y: 0.3461}
-=======
-  m_AnchoredPosition: {x: -5.74, y: -2.14}
->>>>>>> c5bd083 (menu scene)
   m_SizeDelta: {x: 1.6, y: 3.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &5517832763167771694
@@ -220,7 +202,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
+--- !u!114 &3727487222366241622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5517832763167771695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 294fec7ed73a0644f917da6242e803c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 30
+  bulletPrefab: {fileID: 7804868071172186146, guid: 91c83687477b40049a9e7a8f595cc164, type: 3}
+  fireRate: 1
+  useLaser: 0
+  damageOverTime: 30
+  slowAmount: 0.5
+  lineRenderer: {fileID: 0}
+  impactEffect: {fileID: 0}
+  impactLight: {fileID: 0}
+  enemyTag: Enemy
+  partToRotate: {fileID: 1604940958}
+  turnSpeed: 10
+  firePoint: {fileID: 4183546408075131306}
 --- !u!1 &7359764331710540071
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,13 +250,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7359764331710540071}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 1.127, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1604940958}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
->>>>>>> c5bd083 (menu scene)

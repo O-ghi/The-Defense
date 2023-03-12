@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2978864350930005501}
   - component: {fileID: 5517832763167771694}
+  - component: {fileID: 2205966261993502720}
   m_Layer: 0
   m_Name: Tower01_Lv2
   m_TagString: Untagged
@@ -90,6 +91,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2205966261993502720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5517832763167771695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 294fec7ed73a0644f917da6242e803c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 15
+  bulletPrefab: {fileID: 7804868071172186146, guid: 5bb967cbe901fb143b72e9c8c182dc35, type: 3}
+  fireRate: 1
+  useLaser: 0
+  damageOverTime: 30
+  slowAmount: 0.5
+  lineRenderer: {fileID: 0}
+  impactEffect: {fileID: 0}
+  impactLight: {fileID: 0}
+  enemyTag: Enemy
+  partToRotate: {fileID: 6100651483515364494}
+  turnSpeed: 10
+  firePoint: {fileID: 9030274089224538011}
 --- !u!1 &6425876025939582628
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,10 +126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6100651483515364494}
   - component: {fileID: 4614906431992996009}
-<<<<<<< HEAD
   - component: {fileID: 3214798413731646219}
-=======
->>>>>>> c5bd083 (menu scene)
   m_Layer: 0
   m_Name: Tower 01 - Level 02 - Weapon_0
   m_TagString: Untagged
@@ -122,24 +145,15 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-<<<<<<< HEAD
   m_Children:
   - {fileID: 9030274089224538011}
-=======
-  m_Children: []
->>>>>>> c5bd083 (menu scene)
   m_Father: {fileID: 2978864350930005501}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
   m_AnchoredPosition: {x: 0.0171, y: 0.3381}
   m_SizeDelta: {x: 0.9914, y: 0.9982}
-=======
-  m_AnchoredPosition: {x: 0.0025, y: 0.422}
-  m_SizeDelta: {x: 1.2187, y: 1.2255}
->>>>>>> c5bd083 (menu scene)
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &4614906431992996009
 SpriteRenderer:
@@ -193,7 +207,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
 --- !u!95 &3214798413731646219
 Animator:
   serializedVersion: 4
@@ -250,5 +263,3 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 1.107}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
-=======
->>>>>>> c5bd083 (menu scene)

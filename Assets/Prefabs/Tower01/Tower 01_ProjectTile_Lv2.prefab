@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5387497440127083652}
   - component: {fileID: 4942461968767225593}
   - component: {fileID: 963655960761369954}
+  - component: {fileID: 5040657446971701836}
   m_Layer: 0
   m_Name: Tower 01_ProjectTile_Lv2
   m_TagString: Untagged
@@ -105,3 +106,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5040657446971701836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7804868071172186146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87737c070aaa5f4690ee6db051e7101, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 70
+  damage: 50
+  explosionRadius: 0
+  impactEffect: {fileID: 0}

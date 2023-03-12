@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2110146987145916465}
   - component: {fileID: 2110146987145916466}
   - component: {fileID: 2110146987145916464}
+  - component: {fileID: 6857171215155947140}
   m_Layer: 0
   m_Name: Tower 02_Lv2_Projectile
   m_TagString: Untagged
@@ -105,3 +106,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6857171215155947140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110146987145916467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9ddd6b0c213d34caa57c189c906b1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
