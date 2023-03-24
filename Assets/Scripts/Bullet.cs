@@ -51,6 +51,7 @@ public class Bullet : MonoBehaviour
             // Destroy(effectIns, 5f);
         }
 
+
         if (explosionRadius > 0f)
         {
             Explode();
@@ -70,6 +71,7 @@ public class Bullet : MonoBehaviour
         {
             if (collider.tag == "Enemy")
             {
+                Debug.Log($"check");
                 Damage(collider.transform);
 
             }
@@ -78,6 +80,7 @@ public class Bullet : MonoBehaviour
 
     void Damage(Transform enemy)
     {
+        Debug.Log($"takedamge");
         Enemy e = enemy.GetComponent<Enemy>();
 
         if (e != null)

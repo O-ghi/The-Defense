@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4493238895417081304}
   - component: {fileID: 4493238895417081305}
   - component: {fileID: -6119607326704047414}
+  - component: {fileID: -5535265106635625225}
   m_Layer: 0
   m_Name: Tower 03_Lv3_Projectile
   m_TagString: Untagged
@@ -118,3 +119,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d9ddd6b0c213d34caa57c189c906b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-5535265106635625225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4493238895417081254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87737c070aaa5f4690ee6db051e7101, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 70
+  damage: 175
+  explosionRadius: 3
+  impactEffect: {fileID: 4493238895417081254, guid: e8b86706267a5e64e9460ebe4a5eed8d, type: 3}

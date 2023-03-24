@@ -24,11 +24,20 @@ public class WaveSpawner : MonoBehaviour
 
     float timer = 0;
     private Wave wave;
+    /// <summary>
+    /// Start is called on the frame when a script is enabled just before
+    /// any of the Update methods is called the first time.
+    /// </summary>
+    private void Start()
+    {
+        waves = GameManager.waves;
+    }
     void Update()
     {
 
         if (EnemiesAlive > 0)
         {
+            waveCountdownText.transform.parent.gameObject.SetActive(false);
             return;
         }
         if (waveIndex == waves.Length)
@@ -39,6 +48,8 @@ public class WaveSpawner : MonoBehaviour
 
         if (countdown <= 0f)
         {
+            GameManager.instance.warningUI.SetActive(false);
+
             PlayerStats.Rounds++;
             wave = waves[waveIndex];
             foreach (TypeEnemy enemy in wave.EnemyList)
@@ -51,6 +62,11 @@ public class WaveSpawner : MonoBehaviour
 
             return;
         }
+        if (PlayerStats.Rounds == 2)
+        {
+            GameManager.instance.warningUI.SetActive(true);
+        }
+        waveCountdownText.transform.parent.gameObject.SetActive(true);
 
         countdown -= Time.deltaTime;
 
@@ -93,8 +109,13 @@ public class WaveSpawner : MonoBehaviour
     void SpawnEnemy(GameObject enemy)
     {
         System.Random random = new System.Random();
-        int point = random.Next(0, 2);
+        int point = random.Next(0, 3);
         GameObject gameObject = Instantiate(enemy, spawnPoint[point].position, spawnPoint[point].rotation);
         gameObject.GetComponent<Enemy>().target = Waypoints.points[point];
+    }
+
+    public void SetWave(Wave[] waves)
+    {
+        this.waves = waves;
     }
 }

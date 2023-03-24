@@ -7,8 +7,8 @@ public class NodeUI : MonoBehaviour
     public GameObject ui;
 
     public Text upgradeCost;
-    public TMPro.TMP_Text damage;
-    public TMPro.TMP_Text level;
+    public Text damage;
+    public Text level;
     public Button upgradeButton;
 
     public Text sellAmount;
@@ -56,4 +56,8 @@ public class NodeUI : MonoBehaviour
         BuildManager.instance.DeselectNode();
     }
 
+    public void CloseButton()
+    {
+        ui.SetActive(false);
+    }
 }

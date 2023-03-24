@@ -13,4 +13,11 @@ public class TypeEnemy
     public GameObject enemy;
     public int count;
     public float rate;
+
+    public TypeEnemy(GameObject enemy, int count, float rate)
+    {
+        this.enemy = enemy;
+        this.count = count;
+        this.rate = rate;
+    }
 }

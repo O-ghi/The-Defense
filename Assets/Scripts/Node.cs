@@ -65,7 +65,7 @@ public class Node : MonoBehaviour
 
         PlayerStats.Money -= blueprint.cost;
 
-        GameObject _turret = (GameObject)Instantiate(blueprint.prefab, GetBuildPosition(), Quaternion.identity);
+        GameObject _turret = (GameObject)Instantiate(blueprint.prefab, GetBuildPosition(), Quaternion.identity, transform);
         turret = _turret;
 
         turretBlueprint = blueprint;
@@ -91,7 +91,7 @@ public class Node : MonoBehaviour
             Destroy(turret);
 
             //Build a new one
-            GameObject _turret = (GameObject)Instantiate(turretBlueprint.upgradedPrefabLevel2, GetBuildPosition(), Quaternion.identity);
+            GameObject _turret = (GameObject)Instantiate(turretBlueprint.upgradedPrefabLevel2, GetBuildPosition(), Quaternion.identity, transform);
             turret = _turret;
 
             currentLevel = 2;

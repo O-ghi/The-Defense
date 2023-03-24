@@ -18,13 +18,7 @@ public class Turret : MonoBehaviour
 
     [Header("Is Thunder")]
     public bool isThunder = false;
-
-    public int damageOverTime = 30;
     public float slowAmount = .5f;
-
-    public LineRenderer lineRenderer;
-    public ParticleSystem impactEffect;
-    public Light impactLight;
 
     [Header("Unity Setup Fields")]
 

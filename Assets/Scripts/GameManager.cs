@@ -5,13 +5,19 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    public static int currentLevel;
     public static bool GameIsOver;
 
     public GameObject gameOverUI;
     public GameObject completeLevelUI;
+    public GameObject warningUI;
     public GameObject backButton;
 
+    public GameObject pauseButton;
+    public GameObject resumeButton;
+
     public AudioSource audioSource;
+    public static Wave[] waves;
     void Awake()
     {
         if (instance != null)
@@ -30,6 +36,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (GameIsOver)
             return;
 
@@ -51,7 +58,38 @@ public class GameManager : MonoBehaviour
         GameIsOver = true;
         completeLevelUI.SetActive(true);
         backButton.SetActive(true);
+        Debug.Log($"currentLevel " + currentLevel);
+
+        if (PlayerData.level < currentLevel)
+        {
+            Debug.Log($"currentLevel " + currentLevel + PlayerData.level);
+            PlayerData.level = currentLevel;
+            SaveManager.SaveGame();
+        }
+    }
+
+    public void Pause()
+    {
+        resumeButton.SetActive(true);
+        pauseButton.SetActive(false);
+
+        Time.timeScale = 0f;
 
     }
 
+    public void Resume()
+    {
+        resumeButton.SetActive(false);
+        pauseButton.SetActive(true);
+
+        Time.timeScale = 1f;
+    }
+
+    /// <summary>
+    /// Callback sent to all game objects before the application is quit.
+    /// </summary>
+    private void OnApplicationQuit()
+    {
+        SaveManager.SaveGame();
+    }
 }
